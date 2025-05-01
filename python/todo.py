@@ -1,5 +1,5 @@
 """
-todo.py -  command-line based to-do list 
+todo.py -  command-line based to-do list
 script allows user to add, list, and remove tasks and stores lsit in a text file
 
 """
@@ -9,8 +9,7 @@ import os
 TASK_FILE = ".tasks.txt"
 
 def add_task(task):
-    """
-    function -  add_task
+    """function -  add_task
     input - a task to add to the list
     return - n/a
     """
@@ -18,8 +17,7 @@ def add_task(task):
         file.write(task + "\n")
 
 def list_tasks():
-    """
-    function: list_tasks
+    """function: list_tasks
     input - no argument
     return - tasks on list as a string
     where file empty will return a empty string
@@ -36,7 +34,7 @@ def list_tasks():
 
 
 def remove_task(index):
-    """Function: remove_task
+    """function: remove_task
 
     input number of task to be removed 
     return - will print task removed or no tasks found 
@@ -54,8 +52,7 @@ def remove_task(index):
         print("No tasks found.")
 
 def main():
-    """
-    Main function to handle command-line arguments and execute the appropriate
+    """main function does command line and calls the functionsq
     to-do list operations (add, list, or remove tasks).
     """
     parser = argparse.ArgumentParser(description="Command-line Todo List")
