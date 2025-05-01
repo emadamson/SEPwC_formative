@@ -36,8 +36,8 @@ def list_tasks():
 def remove_task(index):
     """function: remove_task
 
-    input number of task to be removed 
-    return - will print task removed or no tasks found 
+    input number of task to be removed
+    return - will print task removed or no tasks found
     """
 
     if os.path.exists(TASK_FILE):
